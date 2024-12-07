@@ -1,4 +1,5 @@
 // ignore_for_file: prefer_const_constructors
+import 'package:c3_layout/screens/ButtonsScreen.dart';
 import 'package:c3_layout/screens/ColumnScreen.dart';
 import 'package:c3_layout/screens/HomeScreen.dart';
 import 'package:c3_layout/screens/LayoutChallenge.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: RainbowScreen(),
+      home: ButtonsScreen(),
     );
   }
 }

@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:c4_business_card_app/widgets/CardBox.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -10,6 +11,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.deepPurple.shade200,
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           CircleAvatar(
             radius: 50,
@@ -32,25 +34,26 @@ class HomeScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontFamily: 'Source Code Pro'),
           ),
-          Container(
-            padding: EdgeInsets.all(10),
-            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-            color: Colors.white,
-            child: Row(children: [
-              Icon(
-                Icons.phone,
-                color: Colors.deepPurple.shade500,
+          SizedBox(
+            height: 70,
+          ),
+          CardBox(cardIcon: Icons.phone, cardText: '0311-1234567'),
+          CardBox(cardIcon: Icons.mail, cardText: 'maazulhaq@gmail.com'),
+          CardBox(cardIcon: Icons.home, cardText: 'North Karachi'),
+          
+          ElevatedButton(
+            onPressed: () {
+              print("Hello");
+            },
+            child: Text("Press !"),
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.purple), 
+                foregroundColor: MaterialStateProperty.all(Colors.white),
               ),
-              SizedBox(width: 10.0,),
-              Text(
-                '0311-1234567',
-                style: TextStyle(
-                  color: Colors.deepPurple.shade800,
-                  fontSize: 20,
-                  fontFamily: 'Source Code Pro',
-                ),
-              )
-            ]),
+          ),
+
+          Container(
+            width: MediaQuery.of(context).size.width,
           )
         ],
       ),
