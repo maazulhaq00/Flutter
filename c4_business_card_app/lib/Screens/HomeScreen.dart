@@ -36,6 +36,9 @@ class HomeScreen extends StatelessWidget {
           ),
           SizedBox(
             height: 70,
+            width: 100,
+            child: Divider(color: Colors.deepPurple.shade500,
+),
           ),
           CardBox(cardIcon: Icons.phone, cardText: '0311-1234567'),
           CardBox(cardIcon: Icons.mail, cardText: 'maazulhaq@gmail.com'),
