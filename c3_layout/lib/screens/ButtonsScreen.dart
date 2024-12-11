@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class ButtonsScreen extends StatelessWidget {
-  // int count = 0;
 
   const ButtonsScreen({super.key});
 
@@ -11,11 +10,9 @@ class ButtonsScreen extends StatelessWidget {
     return Scaffold(
       body: Column(children: [
 
-        // Text("$count"),
           
           ElevatedButton(
             onPressed: () {
-              // count++;
               print("object");
             },
             child: Text("button"),

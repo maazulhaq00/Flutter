@@ -41,16 +41,18 @@ class HomeScreen extends StatelessWidget {
           CardBox(cardIcon: Icons.mail, cardText: 'maazulhaq@gmail.com'),
           CardBox(cardIcon: Icons.home, cardText: 'North Karachi'),
           
-          ElevatedButton(
-            onPressed: () {
-              print("Hello");
-            },
-            child: Text("Press !"),
-            style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.purple), 
-                foregroundColor: MaterialStateProperty.all(Colors.white),
-              ),
-          ),
+          // ElevatedButton
+
+          // ElevatedButton(
+          //   onPressed: () {
+          //     print("Hello");
+          //   },
+          //   child: Text("Press !"),
+          //   style: ButtonStyle(
+          //       backgroundColor: MaterialStateProperty.all(Colors.purple), 
+          //       foregroundColor: MaterialStateProperty.all(Colors.white),
+          //     ),
+          // ),
 
           Container(
             width: MediaQuery.of(context).size.width,
